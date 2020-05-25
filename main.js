@@ -10,7 +10,7 @@ $.ajax({
         beforeSend: function(xhr) {
              xhr.setRequestHeader("Authorization", "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5")
         }, success: function(data){
-        $("#list").html("");
+        $("#list").html("failed to fetch data");
             
             for(var i=0;i<data["articles"].length;i++){
            $("#list").append("<img class='thmb' src="+data['articles'][i]['urlToImage']+"><br><b><a href="+data['articles'][i]['url']+">"+data['articles'][i]['title']+"</a></b><br><small>by"+data['articles'][i]['author']+"<br>"+data['articles'][i]['publishedAt']+"<br></small><div class='less' onclick=h(this)><div class='content'>"+data['articles'][i]['content']+"<br></div><small>Read more..</small></div><hr>")

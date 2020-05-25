@@ -4,7 +4,7 @@ function news(country,cat,publisher){
     if(cat!=null){
         cat='&category='+cat
     }else{cat=""}
-  var url='https://newsapi.org/v2/top-headlines?country='+country+cat+'&apiKey=f6328c5209564494b19fe3a198a266e0';
+  var url='https://newsapi.org/v2/top-headlines?country='+country+cat+'&apiKey=52e8bc3358b547edab99bcafe6047dfa';
 $.ajax({
         url:url,
         beforeSend: function(xhr) {

@@ -3,6 +3,28 @@ body {
   ;  
   color:#fff;
 }
+
+::-webkit-scrollbar-track {
+  background-color: #61696d75;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #606372;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #7cb3427c;
+  border: 0px;
+  background-clip: padding-box;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7CB342;
+ /* border: 0px;
+  background-clip: padding-box;
+  border-radius: 5px;*/
+}
 .header{
     text-align:center;
     Color:#fff;
@@ -75,6 +97,7 @@ a{
 
 .circle-border {
   width: 150px;
+  position: absolute;
   height: 150px;
   padding: 3px;
   display: flex;
